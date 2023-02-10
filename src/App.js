@@ -1,42 +1,32 @@
 /** @format */
 
-//import logo from './logo.svg';
-import "./App.css";
-import Tabela from "./components/Tabela";
+//import Componente01 from "./components/Componente01";
+// import Pai from "./components/IndiretaPai";
+//import React, { useState } from "react";
+import Contador from "./components/Contador2";
 
 function App() {
-	const num = 15;
-	const f1 = () => {
-		console.log("Dentro da F1");
-		return (
-			<div className="divF1">
-				<h2>{num}</h2>
-			</div>
-		);
-	};
+	// const [nome, setNome] = useState("Fulano");
+	// const [contador, setContador] = useState(0);
+
+	// SEM O useState teria que existir algo assim
+	// var nome = ("Fulano");
+	// const setNome2 = (nome) => {
+	// 	nome = nome;
+	// };
+
+	// const verificaUseState = () => {
+	// 	console.log(nome);
+	// 	setNome("Marcio");
+	// 	console.log(nome);
+	// };
 
 	return (
 		<div className="App">
-			<h1> Hello World! </h1>
-			<div className="teste">
-				<p> Teste de Divs </p>
-			</div>
-			<p>{num}</p>
-			<p>{f1()}</p>
-			<div className="div_table">
-				<table class="table tabela-json">
-					<thead>
-						<tr>
-							<th>Sr.NO</th>
-							<th>Name</th>
-							<th>City</th>
-						</tr>
-					</thead>
-					<tbody>
-						<Tabela />
-					</tbody>
-				</table>
-			</div>
+			{/* <Componente01 nome="Cayo Phellipe" /> */}
+			{/* <button onClick={verificaUseState}>Verificar</button> */}
+			{/* <Pai></Pai> */}
+			<Contador></Contador>
 		</div>
 	);
 }
